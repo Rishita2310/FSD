@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- function called sutomatically -->
+    <script>
+        (function (){
+            document.write("Automatically run")
+        })()
+    </script>
+
+    <script>
+    // function called explicitly from js code 
+        function add(a,b){
+            return (a+b)
+        }
+        let res=add(5,10)
+        console.log(res)
+
+    // assigning function to a variable
+        var a=function(x,y){
+            return (x*y )
+        }
+        console.log(a(10,5))
+
+    // one function called from another function
+        function info(first,last){
+            var full=first+" "+last
+            return full
+        }
+        function hello(){
+            var result=info("Isha","AI")
+            document.write(result)
+        }
+
+    // Arrow function without parameter
+        const sayHello=()=>"Hello!"
+        console.log(sayHello())
+
+    // Arrow function with parameter
+        const add2=(a,b)=>a+b
+        console.log(add2(10,20))
+
+    // Arrow function with block body
+        const mul=(a,b)=>{
+            const res=a+b
+            return res
+        }
+        console.log(mul(10,20))
+
+    // Task
+        const add1=(a,b)=>{a+b}
+        console.log(add1(10,20))
+
+    //--------TEMPLATE LITERALS------------
+
+    //Normal string
+        console .log(`Hello`)
+
+    //variable string
+        let name='abc'
+        console.log(`Name ${name}!`)
+
+    //Using Expression
+        let a1=5
+        let b1=3
+        console.log(`Sum=${a1+b1}`)
+
+    //Multiple line
+        let test=`Hello
+How
+why?`
+        console.log(test)
+
+    //Adding html concent 
+        let html="<div>"+"<h1>Title</h1>"+"<p>Text</p>"+"</div>"
+        document.write(html)
+
+    //Adding html using templates
+        let html1=`<div><h1>AI</h1><p>HEHE</p></div>`
+        document.write(html1)
+
+    //rest operator(...)
+        function fun(a,b,...c){
+            console.log(a)
+            console.log(b)
+            console.log(c)
+
+        }
+        fun(1,2,3,4,5)
+
+        function fun1(...arg){
+            console.log(arg)
+        }
+        fun1(1,2,3,4,5,6,7)
+        
+    //spread operator(...)
+        let ar1=[10,42,35]
+        let ar2=[1,2,3]
+        let ar_test=[...ar1,...ar2]
+        console.log(ar_test)
+        console.log(ar1)
+
+    //default parameter
+        function f(a,b=10){
+            return a*b
+        }
+        console.log(f(2))
+    </script>
+</head>
+<body>
+    <input type="button" value="click" onclick="hello()">
+</body>
+</html>

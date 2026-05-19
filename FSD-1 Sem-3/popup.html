@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function warn(){
+            alert("Alert message")
+        }
+
+        function con(){
+            let res=confirm("Do you agree?")
+            if(res==true){
+                document.write("User wants")
+            }
+            else{
+                document.write("User disagree")
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click" onclick="warn()">
+    <input type="button" value="click" onclick="con()">
+</body>
+</html>
