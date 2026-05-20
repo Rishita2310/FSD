@@ -1,0 +1,60 @@
+** 1:npm init
+/*
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (express) 
+version: (1.0.0) 
+description: 
+entry point: (index.js) 
+test command: 
+git repository: https://github.com/Kashyap2908/Express-js
+keywords: 
+author: Kashyap Patel
+license: (ISC) 
+type: (commonjs) 
+About to write to D:\Sem-4\Express\package.json:
+
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kashyap2908/Express-js.git"
+  },
+  "author": "Kashyap Patel",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kashyap2908/Express-js/issues"
+  },
+  "homepage": "https://github.com/Kashyap2908/Express-js#readme"
+}
+
+
+Is this OK? (yes) yes
+*/
+
+
+
+** 2: npm i express
+/*
+added 65 packages, and audited 66 packages in 38s
+
+22 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+*/
