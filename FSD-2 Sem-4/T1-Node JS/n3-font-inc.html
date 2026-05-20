@@ -1,0 +1,28 @@
+<!-- write code to increses the font side at interval of 50ms and it should stop increseing when the font size reach to 50px
+default font size=> 15px. This task should be performed when you click on increase button -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1" style="font-size: 15px;">Isha</p>
+    <button onclick="inc()">Increase</button>
+    <script>
+        function inc(){
+            let p=document.getElementById("p1");
+            let fs=15;
+            setInterval(()=>{
+                if(fs<50){
+                    fs++;
+                    p.style.fontSize=fs+"px";
+                }
+            },50);
+        }
+        
+
+    </script>
+</body>
+</html>

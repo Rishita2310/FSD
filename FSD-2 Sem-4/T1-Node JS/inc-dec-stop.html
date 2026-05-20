@@ -1,0 +1,50 @@
+<!-- Write code to perform the following task
+1.Add 3 buttons -> increase,decrease and stop
+increase button -> max font sixe= 200 px
+decrease button -> min font size= 20px
+default font size = 50px
+stop button to stop the font size change
+Interval : 100ms-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1" style="font-size: 50px;">Isha</p>
+    <button onclick="inc()">Increase</button>
+    <button onclick="dec()">Decrease</button>
+    <button onclick="stop()">Stop</button>
+    <script>
+        let intervalId;
+        let fs = 50;
+
+        function inc() {
+            clearInterval(intervalId);
+            intervalId = setInterval(() => {
+                if (fs < 200) {
+                    fs++;
+                    document.getElementById("p1").style.fontSize = fs + "px";
+                }
+            }, 100);
+        }
+
+        function dec() {
+            clearInterval(intervalId);
+            intervalId = setInterval(() => {
+                if (fs > 20) {
+                    fs--;
+                    document.getElementById("p1").style.fontSize = fs + "px";
+                }
+            }, 100);
+        }
+
+        function stop() {
+            clearInterval(intervalId);
+        }
+    </script>
+</body>
+</html>
